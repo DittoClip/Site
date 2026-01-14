@@ -1069,10 +1069,30 @@ kbd {
     margin-bottom: 16px;
 }
 
-.download-content p {
+.download-content > p {
     color: rgba(255, 255, 255, 0.85);
     font-size: 1.125rem;
+    margin-bottom: 24px;
+}
+
+.price-tag {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 32px;
+}
+
+.price-tag .price {
+    font-size: 4rem;
+    font-weight: 800;
+    color: white;
+    line-height: 1;
+}
+
+.price-tag .price-detail {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 8px;
 }
 
 .download-cta .btn {
@@ -1086,6 +1106,28 @@ kbd {
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
 }
 
+.purchase-benefits {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 32px;
+    flex-wrap: wrap;
+}
+
+.purchase-benefits .benefit {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 0.9375rem;
+}
+
+.purchase-benefits .benefit svg {
+    width: 18px;
+    height: 18px;
+    stroke: rgba(255, 255, 255, 0.9);
+}
+
 .download-meta {
     display: flex;
     justify-content: center;
@@ -1095,6 +1137,12 @@ kbd {
 
 .download-meta .meta-item {
     color: rgba(255, 255, 255, 0.8);
+}
+
+.payment-note {
+    margin-top: 24px;
+    font-size: 0.8125rem !important;
+    color: rgba(255, 255, 255, 0.6) !important;
 }
 
 .download-meta .meta-item svg {
