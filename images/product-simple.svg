@@ -1,0 +1,77 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgSimple" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="100%" style="stop-color:#151515"/>
+    </linearGradient>
+    <linearGradient id="accentSimple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+    <filter id="glowSimple" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="30" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="iconShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#3b82f6" flood-opacity="0.4"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="800" fill="url(#bgSimple)"/>
+
+  <!-- Decorative glow -->
+  <ellipse cx="400" cy="350" rx="200" ry="150" fill="#3b82f6" opacity="0.1" filter="url(#glowSimple)"/>
+
+  <!-- Main icon container -->
+  <g transform="translate(400, 280)" filter="url(#iconShadow)">
+    <!-- Icon background -->
+    <rect x="-80" y="-80" width="160" height="160" rx="40" fill="url(#accentSimple)"/>
+
+    <!-- Clipboard icon -->
+    <g transform="translate(-48, -56)">
+      <!-- Clipboard body -->
+      <rect x="12" y="20" width="72" height="92" rx="8" fill="none" stroke="#fff" stroke-width="5"/>
+      <!-- Clip -->
+      <rect x="28" y="8" width="40" height="24" rx="6" fill="#fff"/>
+      <rect x="36" y="14" width="24" height="12" rx="3" fill="url(#accentSimple)"/>
+      <!-- Lines on clipboard -->
+      <line x1="28" y1="52" x2="68" y2="52" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+      <line x1="28" y1="68" x2="68" y2="68" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+      <line x1="28" y1="84" x2="52" y2="84" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <!-- App name -->
+  <text x="400" y="480" font-family="system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="56" fill="#ffffff" text-anchor="middle" font-weight="700">DittoClip</text>
+
+  <!-- Tagline -->
+  <text x="400" y="530" font-family="system-ui, -apple-system, BlinkMacSystemFont, sans-serif" font-size="22" fill="#888888" text-anchor="middle">Clipboard Manager for macOS</text>
+
+  <!-- Feature pills -->
+  <g transform="translate(400, 590)">
+    <!-- Privacy pill -->
+    <rect x="-280" y="-16" width="100" height="32" rx="16" fill="#1e1e1e" stroke="#333" stroke-width="1"/>
+    <text x="-230" y="6" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#888" text-anchor="middle">Privacy First</text>
+
+    <!-- Native pill -->
+    <rect x="-50" y="-16" width="100" height="32" rx="16" fill="#1e1e1e" stroke="#333" stroke-width="1"/>
+    <text x="0" y="6" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#888" text-anchor="middle">Native macOS</text>
+
+    <!-- Offline pill -->
+    <rect x="180" y="-16" width="100" height="32" rx="16" fill="#1e1e1e" stroke="#333" stroke-width="1"/>
+    <text x="230" y="6" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#888" text-anchor="middle">100% Offline</text>
+  </g>
+
+  <!-- Price -->
+  <g transform="translate(400, 680)">
+    <rect x="-90" y="-24" width="180" height="48" rx="24" fill="url(#accentSimple)"/>
+    <text x="0" y="8" font-family="system-ui, -apple-system, sans-serif" font-size="22" fill="#fff" text-anchor="middle" font-weight="600">$9.50 USD</text>
+  </g>
+
+  <!-- One-time badge -->
+  <text x="400" y="750" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#666" text-anchor="middle">One-time purchase • Free updates forever</text>
+</svg>

@@ -1,0 +1,140 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="50%" style="stop-color:#111111"/>
+      <stop offset="100%" style="stop-color:#0a0a0a"/>
+    </linearGradient>
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="glowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="20" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="20" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+
+  <!-- Subtle grid pattern -->
+  <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+    <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1"/>
+  </pattern>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Glow effects -->
+  <ellipse cx="400" cy="315" rx="300" ry="200" fill="url(#glowGradient)" opacity="0.5"/>
+
+  <!-- App Window -->
+  <g filter="url(#shadow)" transform="translate(80, 100)">
+    <!-- Window frame -->
+    <rect x="0" y="0" width="420" height="430" rx="12" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+
+    <!-- Title bar -->
+    <rect x="0" y="0" width="420" height="40" rx="12" fill="#252525"/>
+    <rect x="0" y="28" width="420" height="12" fill="#252525"/>
+
+    <!-- Traffic lights -->
+    <circle cx="20" cy="20" r="6" fill="#ff5f57"/>
+    <circle cx="40" cy="20" r="6" fill="#febc2e"/>
+    <circle cx="60" cy="20" r="6" fill="#28c840"/>
+
+    <!-- Window title -->
+    <text x="210" y="25" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#888" text-anchor="middle">DittoClip</text>
+
+    <!-- Search bar -->
+    <rect x="16" y="56" width="388" height="36" rx="8" fill="#252525"/>
+    <text x="48" y="79" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#666">Search clipboard history...</text>
+    <circle cx="32" cy="74" r="8" fill="none" stroke="#666" stroke-width="1.5"/>
+    <line x1="38" y1="80" x2="42" y2="84" stroke="#666" stroke-width="1.5"/>
+
+    <!-- Keyboard shortcut badge -->
+    <rect x="352" y="64" width="44" height="20" rx="4" fill="#333"/>
+    <text x="374" y="78" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#888" text-anchor="middle">⌃⇧V</text>
+
+    <!-- Clipboard items -->
+    <!-- Item 1 - Active -->
+    <rect x="16" y="108" width="388" height="56" rx="8" fill="#3b82f6" fill-opacity="0.15" stroke="#3b82f6" stroke-width="1"/>
+    <rect x="28" y="120" width="32" height="32" rx="6" fill="#3b82f6"/>
+    <text x="44" y="142" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="600">T</text>
+    <text x="76" y="138" font-family="ui-monospace, monospace" font-size="13" fill="#fff">npm install dittoclip</text>
+    <text x="76" y="154" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#666">Just now</text>
+
+    <!-- Item 2 -->
+    <rect x="16" y="172" width="388" height="56" rx="8" fill="#252525"/>
+    <rect x="28" y="184" width="32" height="32" rx="6" fill="#8b5cf6"/>
+    <text x="44" y="205" font-family="system-ui, -apple-system, sans-serif" font-size="16" text-anchor="middle">🖼</text>
+    <text x="76" y="202" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#fff">Screenshot 2024-01-15</text>
+    <text x="76" y="218" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#666">2 minutes ago</text>
+
+    <!-- Item 3 -->
+    <rect x="16" y="236" width="388" height="56" rx="8" fill="#252525"/>
+    <rect x="28" y="248" width="32" height="32" rx="6" fill="#3b82f6"/>
+    <text x="44" y="270" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="600">T</text>
+    <text x="76" y="266" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#fff">https://github.com/DittoClip</text>
+    <text x="76" y="282" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#666">5 minutes ago</text>
+
+    <!-- Item 4 -->
+    <rect x="16" y="300" width="388" height="56" rx="8" fill="#252525"/>
+    <rect x="28" y="312" width="32" height="32" rx="6" fill="#3b82f6"/>
+    <text x="44" y="334" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="600">T</text>
+    <text x="76" y="330" font-family="ui-monospace, monospace" font-size="13" fill="#fff">const app = new DittoClip();</text>
+    <text x="76" y="346" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#666">12 minutes ago</text>
+
+    <!-- Item 5 -->
+    <rect x="16" y="364" width="388" height="56" rx="8" fill="#252525"/>
+    <rect x="28" y="376" width="32" height="32" rx="6" fill="#3b82f6"/>
+    <text x="44" y="398" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="600">T</text>
+    <text x="76" y="394" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#fff">hello@dittoclip.com</text>
+    <text x="76" y="410" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#666">1 hour ago</text>
+  </g>
+
+  <!-- Text content on right side -->
+  <g transform="translate(580, 180)">
+    <!-- Logo -->
+    <text x="0" y="0" font-size="48">📋</text>
+
+    <!-- App name -->
+    <text x="60" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="42" fill="#fff" font-weight="700">DittoClip</text>
+
+    <!-- Tagline -->
+    <text x="0" y="50" font-family="system-ui, -apple-system, sans-serif" font-size="24" fill="#888">Clipboard Manager for macOS</text>
+
+    <!-- Description -->
+    <text x="0" y="110" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#666">Never lose a copy again.</text>
+    <text x="0" y="135" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#666">Lightning fast. Privacy first. Native.</text>
+
+    <!-- Features -->
+    <g transform="translate(0, 180)">
+      <circle cx="8" cy="-5" r="4" fill="#3b82f6"/>
+      <text x="24" y="0" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#aaa">Unlimited clipboard history</text>
+
+      <circle cx="8" cy="30" r="4" fill="#3b82f6"/>
+      <text x="24" y="35" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#aaa">Text, images &amp; links</text>
+
+      <circle cx="8" cy="65" r="4" fill="#3b82f6"/>
+      <text x="24" y="70" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#aaa">100% offline &amp; private</text>
+
+      <circle cx="8" cy="100" r="4" fill="#3b82f6"/>
+      <text x="24" y="105" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#aaa">One-time purchase</text>
+    </g>
+
+    <!-- Price badge -->
+    <g transform="translate(0, 320)">
+      <rect x="0" y="0" width="180" height="50" rx="25" fill="url(#accentGradient)"/>
+      <text x="90" y="32" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#fff" text-anchor="middle" font-weight="600">$9.50 USD</text>
+    </g>
+  </g>
+</svg>

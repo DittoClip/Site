@@ -1,0 +1,94 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0a0a"/>
+      <stop offset="100%" style="stop-color:#121212"/>
+    </linearGradient>
+    <linearGradient id="accent3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+    <filter id="windowShadow3">
+      <feDropShadow dx="0" dy="8" stdDeviation="20" flood-color="#000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="800" fill="url(#bg3)"/>
+
+  <!-- Glow -->
+  <ellipse cx="400" cy="350" rx="250" ry="180" fill="#3b82f6" opacity="0.06"/>
+
+  <!-- App Window Mock -->
+  <g filter="url(#windowShadow3)" transform="translate(130, 100)">
+    <!-- Window frame -->
+    <rect x="0" y="0" width="540" height="480" rx="12" fill="#1a1a1a" stroke="#333" stroke-width="1"/>
+
+    <!-- Title bar -->
+    <rect x="0" y="0" width="540" height="40" rx="12" fill="#252525"/>
+    <rect x="0" y="28" width="540" height="12" fill="#252525"/>
+
+    <!-- Traffic lights -->
+    <circle cx="20" cy="20" r="6" fill="#ff5f57"/>
+    <circle cx="40" cy="20" r="6" fill="#febc2e"/>
+    <circle cx="60" cy="20" r="6" fill="#28c840"/>
+
+    <!-- Window title -->
+    <text x="270" y="25" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#888" text-anchor="middle">DittoClip</text>
+
+    <!-- Search bar -->
+    <rect x="16" y="56" width="508" height="40" rx="8" fill="#252525"/>
+    <circle cx="36" cy="76" r="9" fill="none" stroke="#666" stroke-width="1.5"/>
+    <line x1="43" y1="83" x2="48" y2="88" stroke="#666" stroke-width="1.5"/>
+    <text x="58" y="81" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#666">Search clipboard history...</text>
+
+    <!-- Keyboard shortcut -->
+    <rect x="460" y="64" width="52" height="24" rx="5" fill="#333"/>
+    <text x="486" y="81" font-family="system-ui, -apple-system, sans-serif" font-size="11" fill="#888" text-anchor="middle">⌃⇧V</text>
+
+    <!-- Clipboard items -->
+    <!-- Item 1 - Active -->
+    <rect x="16" y="112" width="508" height="64" rx="10" fill="#3b82f6" fill-opacity="0.15" stroke="#3b82f6" stroke-width="1"/>
+    <rect x="28" y="124" width="40" height="40" rx="8" fill="#3b82f6"/>
+    <text x="48" y="150" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#fff" text-anchor="middle" font-weight="600">T</text>
+    <text x="84" y="147" font-family="ui-monospace, monospace" font-size="14" fill="#fff">npm install dittoclip</text>
+    <text x="84" y="166" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#666">Just now</text>
+
+    <!-- Item 2 -->
+    <rect x="16" y="188" width="508" height="64" rx="10" fill="#252525"/>
+    <rect x="28" y="200" width="40" height="40" rx="8" fill="#8b5cf6"/>
+    <text x="48" y="226" font-family="system-ui, -apple-system, sans-serif" font-size="16" text-anchor="middle">🖼</text>
+    <text x="84" y="223" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#fff">Screenshot 2024-01-15.png</text>
+    <text x="84" y="242" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#666">2 minutes ago</text>
+
+    <!-- Item 3 -->
+    <rect x="16" y="264" width="508" height="64" rx="10" fill="#252525"/>
+    <rect x="28" y="276" width="40" height="40" rx="8" fill="#3b82f6"/>
+    <text x="48" y="302" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#fff" text-anchor="middle" font-weight="600">T</text>
+    <text x="84" y="299" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#fff">https://github.com/DittoClip</text>
+    <text x="84" y="318" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#666">5 minutes ago</text>
+
+    <!-- Item 4 -->
+    <rect x="16" y="340" width="508" height="64" rx="10" fill="#252525"/>
+    <rect x="28" y="352" width="40" height="40" rx="8" fill="#3b82f6"/>
+    <text x="48" y="378" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#fff" text-anchor="middle" font-weight="600">T</text>
+    <text x="84" y="375" font-family="ui-monospace, monospace" font-size="14" fill="#fff">const clipboard = new Clip();</text>
+    <text x="84" y="394" font-family="system-ui, -apple-system, sans-serif" font-size="12" fill="#666">12 minutes ago</text>
+
+    <!-- Item 5 -->
+    <rect x="16" y="416" width="508" height="52" rx="10" fill="#252525"/>
+    <rect x="28" y="426" width="40" height="32" rx="8" fill="#3b82f6"/>
+    <text x="48" y="448" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#fff" text-anchor="middle" font-weight="600">T</text>
+    <text x="84" y="448" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#fff">hello@dittoclip.com</text>
+  </g>
+
+  <!-- Bottom text -->
+  <text x="400" y="640" font-family="system-ui, -apple-system, sans-serif" font-size="28" fill="#fff" text-anchor="middle" font-weight="700">Copy anything. Find it later.</text>
+  <text x="400" y="680" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#666" text-anchor="middle">Unlimited clipboard history for macOS</text>
+
+  <!-- Price -->
+  <g transform="translate(400, 740)">
+    <rect x="-80" y="-20" width="160" height="40" rx="20" fill="url(#accent3)"/>
+    <text x="0" y="6" font-family="system-ui, -apple-system, sans-serif" font-size="18" fill="#fff" text-anchor="middle" font-weight="600">$9.50 USD</text>
+  </g>
+</svg>

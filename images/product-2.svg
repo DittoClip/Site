@@ -1,0 +1,118 @@
+<svg width="800" height="800" viewBox="0 0 800 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0f0f"/>
+      <stop offset="100%" style="stop-color:#1a1a1a"/>
+    </linearGradient>
+    <linearGradient id="blueGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#2563eb"/>
+    </linearGradient>
+    <linearGradient id="purpleGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="greenGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981"/>
+      <stop offset="100%" style="stop-color:#059669"/>
+    </linearGradient>
+    <filter id="cardShadow2">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="800" fill="url(#bg2)"/>
+
+  <!-- Header -->
+  <text x="400" y="70" font-family="system-ui, -apple-system, sans-serif" font-size="36" fill="#fff" text-anchor="middle" font-weight="700">
+    <tspan>📋</tspan> DittoClip
+  </text>
+  <text x="400" y="105" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#666" text-anchor="middle">Everything you need, nothing you don't</text>
+
+  <!-- Feature Cards - 2x3 grid -->
+  <!-- Row 1 -->
+  <!-- Card 1: History -->
+  <g filter="url(#cardShadow2)" transform="translate(80, 140)">
+    <rect width="300" height="170" rx="14" fill="#1e1e1e" stroke="#2a2a2a" stroke-width="1"/>
+    <rect x="20" y="20" width="48" height="48" rx="12" fill="url(#blueGrad2)"/>
+    <g transform="translate(28, 28)">
+      <circle cx="16" cy="16" r="11" fill="none" stroke="#fff" stroke-width="2"/>
+      <path d="M16 10v8l4 2" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    <text x="20" y="95" font-family="system-ui, -apple-system, sans-serif" font-size="17" fill="#fff" font-weight="600">Automatic History</text>
+    <text x="20" y="120" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#777">Everything you copy is saved</text>
+    <text x="20" y="140" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#777">automatically to your history.</text>
+  </g>
+
+  <!-- Card 2: Search -->
+  <g filter="url(#cardShadow2)" transform="translate(420, 140)">
+    <rect width="300" height="170" rx="14" fill="#1e1e1e" stroke="#2a2a2a" stroke-width="1"/>
+    <rect x="20" y="20" width="48" height="48" rx="12" fill="url(#purpleGrad2)"/>
+    <g transform="translate(28, 28)">
+      <circle cx="13" cy="13" r="9" fill="none" stroke="#fff" stroke-width="2"/>
+      <line x1="19" y1="19" x2="26" y2="26" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    <text x="20" y="95" font-family="system-ui, -apple-system, sans-serif" font-size="17" fill="#fff" font-weight="600">Lightning Search</text>
+    <text x="20" y="120" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#777">Find anything instantly with</text>
+    <text x="20" y="140" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#777">fast fuzzy search.</text>
+  </g>
+
+  <!-- Row 2 -->
+  <!-- Card 3: Hotkey -->
+  <g filter="url(#cardShadow2)" transform="translate(80, 330)">
+    <rect width="300" height="170" rx="14" fill="#1e1e1e" stroke="#2a2a2a" stroke-width="1"/>
+    <rect x="20" y="20" width="48" height="48" rx="12" fill="url(#greenGrad2)"/>
+    <g transform="translate(26, 30)">
+      <rect x="2" y="6" width="32" height="20" rx="4" fill="none" stroke="#fff" stroke-width="2"/>
+      <text x="18" y="20" font-family="system-ui, -apple-system, sans-serif" font-size="10" fill="#fff" text-anchor="middle" font-weight="600">⌃⇧V</text>
+    </g>
+    <text x="20" y="95" font-family="system-ui, -apple-system, sans-serif" font-size="17" fill="#fff" font-weight="600">Global Hotkey</text>
+    <text x="20" y="120" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#777">Access from any app with</text>
+    <text x="20" y="140" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#777">Ctrl+Shift+V.</text>
+  </g>
+
+  <!-- Card 4: Images -->
+  <g filter="url(#cardShadow2)" transform="translate(420, 330)">
+    <rect width="300" height="170" rx="14" fill="#1e1e1e" stroke="#2a2a2a" stroke-width="1"/>
+    <rect x="20" y="20" width="48" height="48" rx="12" fill="url(#purpleGrad2)"/>
+    <g transform="translate(28, 28)">
+      <rect x="2" y="2" width="26" height="26" rx="4" fill="none" stroke="#fff" stroke-width="2"/>
+      <circle cx="10" cy="11" r="3" fill="#fff"/>
+      <path d="M26 20l-7-7-11 11" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+    </g>
+    <text x="20" y="95" font-family="system-ui, -apple-system, sans-serif" font-size="17" fill="#fff" font-weight="600">Image Support</text>
+    <text x="20" y="120" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#777">Screenshots and images with</text>
+    <text x="20" y="140" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#777">thumbnail previews.</text>
+  </g>
+
+  <!-- Row 3 -->
+  <!-- Card 5: Privacy -->
+  <g filter="url(#cardShadow2)" transform="translate(80, 520)">
+    <rect width="300" height="170" rx="14" fill="#1e1e1e" stroke="#2a2a2a" stroke-width="1"/>
+    <rect x="20" y="20" width="48" height="48" rx="12" fill="url(#greenGrad2)"/>
+    <g transform="translate(28, 26)">
+      <path d="M16 2l-11 4v6c0 7 11 12 11 12s11-5 11-12v-6l-11-4z" fill="none" stroke="#fff" stroke-width="2"/>
+      <polyline points="10,14 14,18 22,10" fill="none" stroke="#fff" stroke-width="2"/>
+    </g>
+    <text x="20" y="95" font-family="system-ui, -apple-system, sans-serif" font-size="17" fill="#fff" font-weight="600">Privacy First</text>
+    <text x="20" y="120" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#777">100% offline. No accounts,</text>
+    <text x="20" y="140" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#777">no cloud, no tracking.</text>
+  </g>
+
+  <!-- Card 6: Native -->
+  <g filter="url(#cardShadow2)" transform="translate(420, 520)">
+    <rect width="300" height="170" rx="14" fill="#1e1e1e" stroke="#2a2a2a" stroke-width="1"/>
+    <rect x="20" y="20" width="48" height="48" rx="12" fill="url(#blueGrad2)"/>
+    <g transform="translate(28, 28)">
+      <polygon points="16,2 2,12 7,12 7,26 25,26 25,12 30,12" fill="none" stroke="#fff" stroke-width="2"/>
+    </g>
+    <text x="20" y="95" font-family="system-ui, -apple-system, sans-serif" font-size="17" fill="#fff" font-weight="600">Native Performance</text>
+    <text x="20" y="120" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#777">Built with Swift. Lightweight</text>
+    <text x="20" y="140" font-family="system-ui, -apple-system, sans-serif" font-size="13" fill="#777">and feels right at home.</text>
+  </g>
+
+  <!-- Bottom -->
+  <text x="400" y="740" font-family="system-ui, -apple-system, sans-serif" font-size="14" fill="#555" text-anchor="middle">macOS 13.0+ • Universal Binary • ~2 MB</text>
+  <text x="400" y="770" font-family="system-ui, -apple-system, sans-serif" font-size="16" fill="#3b82f6" text-anchor="middle" font-weight="600">$9.50 USD — One-time purchase</text>
+</svg>
