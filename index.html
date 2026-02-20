@@ -516,6 +516,23 @@
             <div class="faq-list">
                 <div class="faq-item">
                     <button class="faq-question">
+                        <span>macOS says the app "can't be opened" — what do I do?</span>
+                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="6 9 12 15 18 9"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>While we're completing Apple's notarization process, macOS may block the app. Here's how to open it via Terminal:</p>
+                        <p style="margin-top: 12px;"><strong>Option 1: Remove quarantine (recommended)</strong></p>
+                        <p><code style="display: block; background: var(--color-surface); padding: 12px; border-radius: 8px; margin: 8px 0; font-size: 14px;">xattr -cr /Applications/DittoClip.app</code></p>
+                        <p>Then double-click the app to open it normally.</p>
+                        <p style="margin-top: 12px;"><strong>Option 2: Open via Terminal directly</strong></p>
+                        <p><code style="display: block; background: var(--color-surface); padding: 12px; border-radius: 8px; margin: 8px 0; font-size: 14px;">open /Applications/DittoClip.app</code></p>
+                        <p style="margin-top: 12px; color: var(--color-text-secondary); font-size: 14px;">This is a one-time step. Once opened, the app will work normally. We're working with Apple to complete notarization soon!</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">
                         <span>How does the free trial work?</span>
                         <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <polyline points="6 9 12 15 18 9"/>
