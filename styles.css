@@ -1047,7 +1047,7 @@ kbd {
 }
 
 .faq-item.active .faq-answer {
-    max-height: 300px;
+    max-height: 500px;
 }
 
 .faq-answer p {
